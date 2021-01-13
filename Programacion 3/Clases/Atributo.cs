@@ -29,7 +29,7 @@ namespace Programacion_3.Clases
 
         public void resultados()
         {
-            resultado = nombre + " tiene " + edad + " de edad"; 
+            resultado = nombre + " tiene " + edad.ToString() + " de edad"; 
         }
 
     }
