@@ -41,19 +41,39 @@
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clases\Atributo.cs" />
-    <Compile Include="Forms\Form1.cs">
+    <Compile Include="Clases\Atributo-Edad.cs" />
+    <Compile Include="Clases\Atributo_Calculadora.cs" />
+    <Compile Include="Forms\calculadora.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\calculadora.Designer.cs">
+      <DependentUpon>calculadora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Edad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Edad.Designer.cs">
+      <DependentUpon>Edad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\calculadora.resx">
+      <DependentUpon>calculadora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Edad.resx">
+      <DependentUpon>Edad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -63,6 +83,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -77,6 +98,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\transparent-soccer-ball-soccer-clipart-png-transparent-azpng5db11576d60270.6520987315718864548766.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-soccer-ball-football-sport-ballon-foot-child-monochrome-symmetry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transparent-soccer-ball-soccer-clipart-png-transparent-azpng5db11576d60270.65209873157188645487661.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
