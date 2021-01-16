@@ -45,7 +45,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Atributo-Edad.cs" />
+    <Compile Include="Clases\Atributo_balon.cs" />
     <Compile Include="Clases\Atributo_Calculadora.cs" />
+    <Compile Include="Forms\balon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\balon.Designer.cs">
+      <DependentUpon>balon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\calculadora.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +73,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\balon.resx">
+      <DependentUpon>balon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\calculadora.resx">
       <DependentUpon>calculadora.cs</DependentUpon>
     </EmbeddedResource>
