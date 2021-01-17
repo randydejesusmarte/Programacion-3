@@ -78,6 +78,7 @@ namespace Programacion_3
             this.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold);
             this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Name = "menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu  de atributos";
             this.ResumeLayout(false);
 

@@ -59,6 +59,7 @@ namespace Programacion_3.Forms
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.Name = "balon";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "balon";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

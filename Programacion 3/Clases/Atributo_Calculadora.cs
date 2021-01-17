@@ -8,13 +8,11 @@ namespace Programacion_3.Clases
 {
     public class Atributo_Calculadora : Attribute
     {
-
         //////////////////////////////////////////////////////////////////////////////////
         private const double pi = 3.14;
         private double cal1 = 0;
         private double cal2 = 0;
         //////////////////////////////////////////////////////////////////////////////////
-        
 
         public Double Sumar(Double cal1, Double cal2)
         {

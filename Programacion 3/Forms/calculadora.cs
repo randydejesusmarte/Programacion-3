@@ -21,9 +21,10 @@ namespace Programacion_3.Forms
         Atributo_Calculadora atributo = new Atributo_Calculadora();
         private void button1_Click(object sender, EventArgs e)
         {
-            textBox1.Text = atributo.Sumar(5, 5).ToString();
-            textBox2.Text = atributo.Pi(25).ToString();
-            textBox3.Text = atributo.Multuplicar(Convert.ToDouble(textBox1.Text), Convert.ToDouble(textBox2.Text)).ToString();
+            textBox1.Text = atributo.Sumar(5, 5).ToString();//calcular dos digitos
+            textBox2.Text = atributo.Pi(25).ToString();//multiplicar por pi
+            textBox3.Text = atributo.Multuplicar(Convert.ToDouble(textBox1.Text), 
+                Convert.ToDouble(textBox2.Text)).ToString();//multiplicar numeros de dos objetos
         }
     }
 }

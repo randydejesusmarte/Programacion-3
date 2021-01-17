@@ -109,6 +109,7 @@ namespace Programacion_3.Forms
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Name = "calculadora";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "calculadora";
             this.ResumeLayout(false);
             this.PerformLayout();

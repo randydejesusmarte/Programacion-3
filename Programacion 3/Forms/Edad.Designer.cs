@@ -84,7 +84,7 @@ namespace Programacion_3
             this.NUD_Edad.Size = new System.Drawing.Size(167, 33);
             this.NUD_Edad.TabIndex = 5;
             // 
-            // Form1
+            // Edad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -96,7 +96,8 @@ namespace Programacion_3
             this.Controls.Add(this.Bt_Ejecutar);
             this.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold);
             this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.Name = "Form1";
+            this.Name = "Edad";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.NUD_Edad)).EndInit();
             this.ResumeLayout(false);
