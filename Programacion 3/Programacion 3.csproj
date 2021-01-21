@@ -44,9 +44,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\ARSc.cs" />
     <Compile Include="Clases\Atributo-Edad.cs" />
     <Compile Include="Clases\Atributo_balon.cs" />
     <Compile Include="Clases\Atributo_Calculadora.cs" />
+    <Compile Include="Clases\Validacion.cs" />
+    <Compile Include="Forms\ARS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ARS.Designer.cs">
+      <DependentUpon>ARS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\balon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +81,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\ARS.resx">
+      <DependentUpon>ARS.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\balon.resx">
       <DependentUpon>balon.cs</DependentUpon>
     </EmbeddedResource>

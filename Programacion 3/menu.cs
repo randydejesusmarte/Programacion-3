@@ -32,5 +32,10 @@ namespace Programacion_3
         {
             new balon().ShowDialog();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            new ARS().ShowDialog();
+        }
     }
 }
