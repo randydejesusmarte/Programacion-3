@@ -14,47 +14,47 @@ namespace Programacion_3.Clases
         private double cal2 = 0;
         //////////////////////////////////////////////////////////////////////////////////
 
-        public Double Sumar(Double cal1, Double cal2)
+        public double Sumar(double cal1, double cal2)
         {
             return (cal1 + cal2);
         }
-        public Double Restar(Double cal1, Double cal2)
+        public double Restar(double cal1, double cal2)
         {
             return (cal1 - cal2);
         }
-        public Double Multuplicar(Double cal1, Double cal2)
+        public double Multuplicar(double cal1, double cal2)
         {
             return (cal1 * cal2);
         }
-        public Double Dividir(Double cal1, Double cal2)
+        public double Dividir(double cal1, double cal2)
         {
             return (cal1 / cal2);
         }
 
-        public Double Pi(Double cal1)
+        public double Pi(double cal1)
         {
             return (cal1 * pi);
         }
 
         //////////////////////////////////////////////////////////////////////////////////
-        public Double Sumar()
+        public double Sumar()
         {
             return (cal1 + cal2);
         }
-        public Double Restar()
+        public double Restar()
         {
             return (cal1 - cal2);
         }
-        public Double Multuplicar()
+        public double Multuplicar()
         {
             return (cal1 * cal2);
         }
-        public Double Dividir()
+        public double Dividir()
         {
             return (cal1 / cal2);
         }
 
-        public Double Pi()
+        public double Pi()
         {
             return (cal1 * pi);
         }

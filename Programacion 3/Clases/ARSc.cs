@@ -21,19 +21,22 @@ namespace Programacion_3.Clases
             }
         }
 
+        TextBox ts;
         /// 
-
+        public void parametro(TextBox text)
+        {
+            ts = text;
+            return;
+        }
         int afp_porcent=7;
         double afp_result;
-        TextBox ts;
 
         public int Afp_porcent { get => afp_porcent; set => afp_porcent = value; }
         public double Afp_result { get => afp_result; set => afp_result = value; }
 
-        public void Afp(TextBox text)
+        public void Afp()
         {
-            ts = text;
-            Afp_result = double.Parse(text.Text) * afp_porcent / 100;
+            Afp_result = double.Parse(ts.Text) * afp_porcent / 100;
             return;
         }
 
@@ -44,10 +47,9 @@ namespace Programacion_3.Clases
         public int Ars_porcent { get => ars_porcent; set => ars_porcent = value; }
         public double Ars_result { get => ars_result; set => ars_result = value; }
 
-        public void Ars(TextBox text)
+        public void Ars()
         {
-            ts = text;
-            Ars_result = double.Parse(text.Text) * ars_porcent / 100;
+            Ars_result = double.Parse(ts.Text) * ars_porcent / 100;
             return;
         }
 
@@ -60,10 +62,10 @@ namespace Programacion_3.Clases
 
         public void Descuento()
         {
-            Afp(ts);
+            Afp();
             ars = ars_result;
 
-            Ars(ts);
+            Ars();
             afp = afp_result;
 
             dec_result = afp - ars;

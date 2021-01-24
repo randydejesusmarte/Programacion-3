@@ -17,22 +17,28 @@ namespace Programacion_3.Forms
         {
             InitializeComponent();
         }
-        ARSc ARSc = new ARSc();
+        ARSc ARc = new ARSc();
         private void button1_Click(object sender, EventArgs e)
         {
             if(new Validacion().validacion(textBox1))
             {
-                ARSc.Afp(textBox1);
-                textBox2.Text = ARSc.Afp_result.ToString();
+                ARc.parametro(textBox1);
 
-                ARSc.Ars(textBox1);
-                textBox3.Text = ARSc.Ars_result.ToString();
+                ARc.Afp();
+                textBox2.Text = ARc.Afp_result.ToString();
 
-                ARSc.Descuento();
-                textBox4.Text = ARSc.Dec_result.ToString();
+                ARc.Ars();
+                textBox3.Text = ARc.Ars_result.ToString();
 
-                ARSc.T_Neto();
-                textBox5.Text = ARSc.Neto.ToString();
+                ARc.Descuento();
+                textBox4.Text = ARc.Dec_result.ToString();
+
+                ARc.T_Neto();
+                textBox5.Text = ARc.Neto.ToString();
+            }
+            else
+            {
+                MessageBox.Show("falta el total bruto","Aviso",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
         }
     }
