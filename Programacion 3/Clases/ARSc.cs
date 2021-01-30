@@ -75,7 +75,7 @@ namespace Programacion_3.Clases
             Ars();//ejecuto el metodo ars
             afp = afp_result;//obtengo su resultado
 
-            dec_result = afp - ars;//resto ambos
+            dec_result = afp + ars;//resto ambos
             return;
         }
         ///valor neto
