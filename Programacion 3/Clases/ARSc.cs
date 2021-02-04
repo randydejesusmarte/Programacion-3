@@ -9,7 +9,6 @@ namespace Programacion_3.Clases
 {
     public class ARSc
     {
-        ///valido la caja de texto para saber si se encuentra en blanco
         public bool Validacion(TextBox text)
         {
             if (string.IsNullOrEmpty(text.Text))
@@ -21,18 +20,14 @@ namespace Programacion_3.Clases
                 return true;
             }
         }
-
-        ///creo la variable ts de tipo texbox para el valor bruto
-        TextBox ts;
         
-        ///entro informacion el la variable ts
+        TextBox ts;
+        /// 
         public void parametro(TextBox text)
         {
             ts = text;
             return;
         }
-        
-        ///variables para obtener el afp
         int afp_porcent=7;
         double afp_result;
 
@@ -41,12 +36,11 @@ namespace Programacion_3.Clases
 
         public void Afp()
         {
-            //llenar      convertir a double  por  porcentaje a obtener
             Afp_result = double.Parse(ts.Text) * afp_porcent / 100;
             return;
         }
 
-        ///variables para obtener el ars
+        /// 
 
         int ars_porcent = 3;
         double ars_result;
@@ -55,12 +49,11 @@ namespace Programacion_3.Clases
 
         public void Ars()
         {
-            //llenar     convertir a double   por porcentaje a obtener
             Ars_result = double.Parse(ts.Text) * ars_porcent / 100;
             return;
         }
 
-        /// obtengo el descuento
+        /// 
 
         double dec_result;
         double ars;
@@ -69,21 +62,21 @@ namespace Programacion_3.Clases
 
         public void Descuento()
         {
-            Afp();//ejecuto el metodo afp
-            ars = ars_result;//optengo su resultado
+            Afp();
+            ars = ars_result;
 
-            Ars();//ejecuto el metodo ars
-            afp = afp_result;//obtengo su resultado
+            Ars();
+            afp = afp_result;
 
-            dec_result = afp + ars;//resto ambos
+            dec_result = afp - ars;
             return;
         }
-        ///valor neto
+
         double netos;
         public double Neto { get => netos; set => netos = value; }
         public void T_Neto()
         {
-            netos = double.Parse(ts.Text) - dec_result;//resto el descuento con lel valor bruto
+            netos = double.Parse(ts.Text) - dec_result;
             return;
         }
 

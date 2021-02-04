@@ -1,4 +1,5 @@
-﻿using Programacion_3.Forms;
+﻿using Programacion_3.Clases;
+using Programacion_3.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -36,6 +37,11 @@ namespace Programacion_3
         private void button4_Click(object sender, EventArgs e)
         {
             new ARS().ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            new Datagrib().ShowDialog();
         }
     }
 }
